@@ -1,5 +1,6 @@
 <div>
-    <ul>
+    <ul class="heroes">
+        <!-- The *ngFor is Angular's repeater directive. It repeats the host element for each element in a list. -->
         <li *ngFor=" let hero of heroes">
             <button class="bg-gray-900 text-yellow-300 font-medium rounded-xl p-2 m-2">
                 {{hero.name}}
