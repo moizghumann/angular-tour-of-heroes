@@ -1,2 +1,9 @@
-<p class=" text-yellow-300 opacity-60 font-medium text-lg">{{hero.name}} works!</p>
-<p class=" text-yellow-300 opacity-60 font-medium text-lg">ID: {{hero.id}}</p>
+<div>
+    <ul>
+        <li *ngFor=" let hero of heroes">
+            <button class="bg-gray-900 text-yellow-300 font-medium rounded-xl p-2 m-2">
+                {{hero.name}}
+            </button>
+        </li>
+    </ul>
+</div>
