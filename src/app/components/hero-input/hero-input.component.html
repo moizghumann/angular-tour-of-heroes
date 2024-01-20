@@ -1,0 +1,14 @@
+<div class=" mt-5 flex flex-col justify-start">
+    <label for="name" class=" font-medium text-lg text-neutral-200 py-1">
+        Hero name:
+    </label>
+    <!-- [(ngModel)] is Angular's two-way data binding syntax.
+    Here it binds the hero.name property to the HTML text box so that data can flow in both directions. Data can flow from the hero.name property to the text box and from the text box back to the hero.name. -->
+
+    <!-- async: The async pipe is used to subscribe to an Observable and unwrap its emitted values. It subscribes to the selectedHero$ observable and returns the latest emitted value. -->
+
+    <!-- The as syntax in combination with async allows you to assign the unwrapped value from the observable to a variable (selectedHero in this case). -->
+    <p class=" text-white" *ngIf="heroService.selectedHero$| async as selectedHero">
+        {{selectedHero.name}}
+    </p>
+</div>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from 'src/app/interfaces/hero';
+
+import { FetchDataService } from 'src/app/services/fetch-data.service';
 
 @Component({
   selector: 'app-hero-input',
@@ -11,4 +13,7 @@ export class HeroInputComponent {
     id: 1,
     name: 'Windstorm'
   }
+
+  constructor(public heroService: FetchDataService) { }
+
 }

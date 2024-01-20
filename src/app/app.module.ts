@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroInputComponent } from './hero-input/hero-input.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroInputComponent } from './components/hero-input/hero-input.component';
 
 import { FormsModule } from '@angular/forms';
+import { HeroCardComponent } from './components/hero-card/hero-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroInputComponent
+    HeroInputComponent,
+    HeroCardComponent
   ],
   imports: [
     BrowserModule,

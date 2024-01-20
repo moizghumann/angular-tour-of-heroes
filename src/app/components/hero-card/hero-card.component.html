@@ -1,0 +1,29 @@
+<div class=" border-4 p-4 border-gray-700 rounded-3xl">
+    <div>
+        <img src="assets/X.jpeg" alt="living-room" class="w-64 h-52 object-cover rounded-xl mb-4">
+    </div>
+    <div class=" text-white">
+        <div class=" flex justify-between mb-1">
+            <h2 class=" font-semibold">
+                {{home.homeHeading}}
+            </h2>
+            <h2 class=" text-[15px] tracking-wide opacity-85">
+                {{home.rating}}
+            </h2>
+        </div>
+        <div class=" opacity-65 tracking-wide mb-2">
+            <p>
+                {{home.location}}
+            </p>
+            <p>
+                {{home.homeInfo}}
+            </p>
+            <p>
+                {{home.bookingDate}}
+            </p>
+        </div>
+        <p class=" opacity-85">
+            ${{home.homePrice}} night
+        </p>
+    </div>
+</div>
